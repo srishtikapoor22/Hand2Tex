@@ -1,0 +1,9 @@
+torch>=2.0.0
+torchvision
+transformers
+pillow
+fastapi
+uvicorn
+python-multipart
+gradio
+pyyaml
