@@ -1,3 +1,57 @@
-dataset_path: "data/input"
-batch_size: 32
-learning_rate: 0.001
+data:
+  kaggle_data_dir: "data/kaggle_math"
+  train_dir: "data/train"
+  val_dir: "data/val" 
+  test_dir: "data/test"
+  num_classes: 20
+  
+
+model:
+  name: "SimpleMathOCR"
+  input_channels: 1
+  hidden_dim: 256
+  encoder_layers: 3
+  decoder_type: "linear"
+  
+
+training:
+  batch_size: 2
+  learning_rate: 0.001
+  epochs: 10
+  device: "cpu"
+  save_every: 5
+  
+
+logging:
+  level: "INFO"
+  log_dir: "logs"
+  tensorboard_dir: "runs"
+  
+
+paths:
+  model_save_dir: "models"
+  output_dir: "outputs"
+  
+
+symbols:
+  vocab:
+    0: "x"
+    1: "+"
+    2: "y" 
+    3: "^"
+    4: "\\int"
+    5: "\\frac"
+    6: "1"
+    7: "2"
+    8: "="
+    9: "-"
+    10: "("
+    11: ")"
+    12: "0"
+    13: "3"
+    14: "4"
+    15: "5"
+    16: "z"
+    17: "\\sin"
+    18: "\\cos"
+    19: "\\pi"

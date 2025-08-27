@@ -1,5 +1,5 @@
 torch>=2.0.0
-torchvision
+torchvision>=0.15.0
 transformers
 pillow
 fastapi
@@ -7,3 +7,9 @@ uvicorn
 python-multipart
 gradio
 pyyaml
+pytesseract
+opencv-python
+numpy
+scikit-learn
+tensorboard
+pytest
